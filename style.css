@@ -1,0 +1,107 @@
+h1,
+h4 {
+  text-align: center;
+}
+.btn-input {
+  border: 1px solid white;
+  margin-left: 0.5rem;
+}
+form.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0;
+  margin-left: 0;
+  gap: 1rem;
+}
+.form-btn {
+  flex-grow: 4;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(20, 125, 217);
+}
+.a-btn {
+  color: aliceblue;
+}
+ul {
+  width: 26rem;
+  box-shadow: 0 0 10px gray;
+  background-color: black;
+}
+tr {
+  color: red;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.7rem;
+  height: 3rem;
+  border: 2px solid rgb(115, 114, 114);
+  border-radius: 0.6rem;
+}
+
+.form-check {
+  margin-left: 0.5rem;
+}
+progress {
+  border-radius: 1rem;
+  width: 7.3rem;
+  height: 0.4rem;
+  background-color: green;
+}
+progress::-webkit-progress-value {
+  background-color: #ff0000;
+}
+
+/* Tooltip container */
+.tooltip-times {
+  width: 26rem;
+  position: relative;
+  display: inline-block;
+  border: 1px dotted rgb(0, 0, 0); /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip-times .tooltip-text {
+  visibility: hidden;
+  width: 26rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0 0 10px gray;
+  font-weight: bolder;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 20%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip-times .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip-times:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
