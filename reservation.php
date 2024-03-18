@@ -38,11 +38,11 @@ $message="chyba";
         )){
                 $message= "vlozeno";
                 if(sendEmail($name,$street,$city,$phone,$email,$date,$time)){
-                    $_SESSION["email"] =  "Email byl úspěšně odeslán";
+                    $_SESSION["email"] =  "Rezervační formulář byl úspěšně odeslán a čeká na schválení.";
                     $_SESSION["emailTheme"] =  " alert-success ";
                     header($location);
                 }else{
-                    $_SESSION["email"] =  "Chyba při odesílání emailu";
+                    $_SESSION["email"] =  "Chyba při odesílání rezervačního formuláře";
                     $_SESSION["emailTheme"] =  " alert-danger ";
                     header($location);
                    
